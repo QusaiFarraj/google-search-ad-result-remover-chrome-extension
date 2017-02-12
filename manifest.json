@@ -1,14 +1,25 @@
 {
   "manifest_version": 2,
   "name": "Google Search Ad Result Remover",
-  "version": "0.0",
-  
-  
+  "version": "0.0.0",
+  "description": "Removes the search resluts that are ads.",
+  "icons": {"128": "icon.png"},
+  "permissions": [
+    "tabs", "<all_urls>"
+  ],
   
   "browser_action": {
-    "default_icon": "icon.png",
+    "default_icon": "browseraction.png",
     "default_popup": "popup.html"
   },
+  
+  "content_scripts": [
+    {
+      "matches": [ "www.google.com" ],
+      "js": ["scripts/contentscript.js"],
+      "run_at": "document_end"
+    }
+  ]
   
   
 }
