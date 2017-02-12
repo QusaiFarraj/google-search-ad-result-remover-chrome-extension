@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Google Search Ad Result Remover",
+  "version": "0.0",
+  
+  
+  
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  
+  
+}
